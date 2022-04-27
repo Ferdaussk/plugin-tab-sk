@@ -129,7 +129,7 @@ class BWDTZTabs extends Widget_Base {
 			if ( $settings['bwdtz_tabs'] ) {
 				foreach (  $settings['bwdtz_tabs'] as $item ) {
 				echo '<div class="sk_name elementor-repeater-item-' . esc_attr( $item['_id'] ) . '">'; ?>
-					<button class="bwdtz-nav-link" id="home-tab"><?php echo esc_html($item['bwdtz_tabs_title']); ?></button>
+					<button class="bwdtz-nav-link active-link" id="home-tab"><?php echo esc_html($item['bwdtz_tabs_title']); ?></button>
 				</div>
 				<?php
 				}
@@ -139,7 +139,7 @@ class BWDTZTabs extends Widget_Base {
 			<?php
 			if ( $settings['bwdtz_tabs'] ) {
 				foreach (  $settings['bwdtz_tabs'] as $item ) {
-				echo '<div class="bwdtz-tab-pane elementor-repeater-item-' . esc_attr( $item['_id'] ) . '" id="home">'; ?>
+				echo '<div class="bwdtz-tab-pane active-tab-pane elementor-repeater-item-' . esc_attr( $item['_id'] ) . '" id="home">'; ?>
 					<p><?php echo esc_html($item['bwdtz_tabs_description']); ?></p>
 				</div>
 				<?php
